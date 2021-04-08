@@ -15,9 +15,9 @@ timezone: Asia/Singapore
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Chirpy                          # the main title
+title: Hanif Z                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Just a blog   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -40,17 +40,17 @@ social:
   email: ahanifbz@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/Hanif_Z      # change to your twitter homepage
     - https://github.com/hanifz-dr1       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/hanifz-dr1/
 
 google_site_verification: XcjmU2v4iO6lKpdCppk5XrDRo8pg1mp7Pnu2iDmW8r4 # change to your verification string
 # --------------------------
 
 google_analytics:
-  id: ''              # fill in your Google Analytics ID
+  id: 'G-MVWP5FV4G0'              # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
