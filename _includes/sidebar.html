@@ -67,23 +67,29 @@
       {% endcapture %}
 
       {% if url %}
-      <a href="{{ url }}" aria-label="{{ entry.type }}"
+      <!-- <a href="{{ url }}" aria-label="{{ entry.type }}"
         {% unless site.theme_mode %}class="order-{{ forloop.index | plus: 2 }}"{% endunless %}
         {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
         <i class="{{ entry.icon }}"></i>
-      </a>
+      </a> -->
+	  <a href="{{ url }}" aria-label="{{ entry.type }}"
+	  {% unless site.theme_mode %}class="order-{{ forloop.index }}"{% endunless %}
+	  {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
+	  <i class="{{ entry.icon }}"></i>
+	</a>
       {% endif %}
 
     {% endfor %}
 
     {% unless site.theme_mode %}
-      {% if site.data.contact.size > 0 %}
+      <!-- {% if site.data.contact.size > 0 %}
         <span class="icon-border order-2"></span>
-      {% endif %}
+      {% endif %} -->
 
-      <span id="mode-toggle-wrapper" class="order-1">
+      <span id="mode-toggle-wrapper" class="order-5">
         {% include mode-toggle.html %}
       </span>
+	  <!-- <span id="text" class="order-7">Light/Dark</span> -->
     {% endunless %}
 
   </div> <!-- .sidebar-bottom -->

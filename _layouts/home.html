@@ -3,6 +3,10 @@ layout: page
 # The Home page layout
 ---
 
+<h1>Welcome!</h1>
+<p>My social links can be found at the bottom of the sidebar.
+<br><br>Note: Toggle dark or light mode using the button below the social links.
+</p>
 
 {% assign pinned = site.posts | where_exp: "item", "item.pin == true"  %}
 {% assign default = site.posts | where_exp: "item", "item.pin != true"  %}
