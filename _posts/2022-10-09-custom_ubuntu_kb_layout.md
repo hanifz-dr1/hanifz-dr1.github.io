@@ -9,7 +9,7 @@ tags: [ubuntu, guide]     # TAG names should always be lowercase
 
 This guide is a quick explainer on how to add custom keyboard mappings to the standard US keyboard layout in Ubuntu 22.04 using left-alt as a layer key.
 
-This is based on: https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions?action=show&redirect=Howto%3A+Custom+keyboard+layout+definitions
+This is based on: <https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions?action=show&redirect=Howto%3A+Custom+keyboard+layout+definitions>
 
 There are two files to edit
 - /usr/share/X11/xkb/symbols/us
