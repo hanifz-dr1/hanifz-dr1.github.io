@@ -1,13 +1,11 @@
 ---
-title: How to set up custom keyboard mapping in Ubuntu 22.04
+title: How to set up custom keyboard mapping in Ubuntu 20.04/22.04
 date: 2022-10-09 13:00:00 +0800
 categories: [How To]
 tags: [ubuntu, guide]     # TAG names should always be lowercase
 ---
 
-## Brief
-
-This guide is a quick explainer on how to add custom keyboard mappings to the standard US keyboard layout in Ubuntu 22.04 using left-alt as a layer key.
+This guide is a quick explainer on how to add custom keyboard mappings to the standard US keyboard layout in Ubuntu 20.04/22.04 using left-alt as a layer key.
 
 This is based on: <https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions?action=show&redirect=Howto%3A+Custom+keyboard+layout+definitions>
 
@@ -16,7 +14,7 @@ There are two files to edit
 - /usr/share/X11/xkb/rules/evdev.xml
 
 
-## In file "/usr/share/X11/xkb/symbols/us"
+## In file "/usr/share/X11/xkb/symbols/us":
 After the first layout "basic" after line 57 and before the next layout add:
 ```
 partial alphanumeric_keys
@@ -43,7 +41,7 @@ xkb_symbols "custom" {
 };
 ```
 
-## In file "/usr/share/X11/xkb/rules/evdev.xml"
+## In file "/usr/share/X11/xkb/rules/evdev.xml":
 Find (should be line 1334):
 ```
 <layoutList>
@@ -65,8 +63,9 @@ Before the "chr" variant, after the `<variantList>` line, add our own custom var
 </variant>
 ```
 
-## In terminal (not confirmed if required)
-Run
+## ~~In terminal (not confirmed if required)~~
+
+~~Run~~
 ```
 sudo dpkg-reconfigure xkb-data
 ```
