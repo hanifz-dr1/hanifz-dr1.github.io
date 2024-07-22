@@ -36,7 +36,7 @@ xkb_symbols "custom" {
     key <AB08> {	[     comma,	less, Home, Home		]	};
     key <AB09> {	[    period,	greater, End, End		]	};
     key <AB10> {	[     slash,	question, Delete, Delete	]	};
-    key <AC11> {  [ apostrophe, quotedbl, BackSpace, BackSpace  ] };
+    key <AC11> {	[ apostrophe, quotedbl, BackSpace, BackSpace	]	};
 
     include "level3(lalt_switch)"
 };
