@@ -1,5 +1,5 @@
 ---
-title: How to set up custom keyboard mapping in Ubuntu 20.04/22.04
+title: How to set up custom keyboard mapping in Ubuntu 20.04/22.04/24.04
 date: 2022-10-09 13:00:00 +0800
 categories: [How To]
 tags: [ubuntu, guide]     # TAG names should always be lowercase
