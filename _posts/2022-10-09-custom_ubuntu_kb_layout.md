@@ -5,7 +5,7 @@ categories: [How To]
 tags: [ubuntu, guide]     # TAG names should always be lowercase
 ---
 
-This guide is a quick explainer on how to add custom keyboard mappings to the standard US keyboard layout in Ubuntu 20.04/22.04 using left-alt as a layer key.
+This guide is a quick explainer on how to add custom keyboard mappings to the standard US keyboard layout in Ubuntu 20.04/22.04/24.04 using left-alt as a layer key.
 
 This is based on: <https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions?action=show&redirect=Howto%3A+Custom+keyboard+layout+definitions>
 
@@ -21,7 +21,7 @@ partial alphanumeric_keys
 xkb_symbols "custom" {
 
     include "us(basic)"
-    name[Group1]= "English (US, euro on 5)";
+    name[Group1]= "English (US, custom left alt layer)";
 
     key <AD07> {	[	  u,	U, grave, asciitilde		]	};
     key <AD08> {	[	  i,	I, minus, underscore		]	};
@@ -54,12 +54,12 @@ Find (should be line 1334):
       <description>English (US)</description>
 ```
 
-Before the "chr" variant, after the `<variantList>` line, add our own custom variant:
+After the `<variantList>` line, add our own custom variant:
 ```
 <variant>
   <configItem>
     <name>custom</name>
-    <description>English (custom left alt layer)</description>
+    <description>English (US, custom left alt layer)</description>
   </configItem>
 </variant>
 ```
